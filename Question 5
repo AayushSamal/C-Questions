@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    float pie = 3.14;
+    float radius;
+    
+    printf("Enter radius: ");
+    scanf("%f",&radius);
+    printf("Circumference: %f\n",2*pie*radius);
+    printf("Area: %f", pie*radius*radius);
+    
+    return 0;
+}
