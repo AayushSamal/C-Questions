@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int a;
+    int b;
+    
+    printf("Enter the 1st nuymber: ");
+    scanf("%d",&a);
+    printf("Enter the 2nd number: ");
+    scanf("%d",&b);
+    
+    printf("Result = %d", a+b);
+
+    return 0;
+}
