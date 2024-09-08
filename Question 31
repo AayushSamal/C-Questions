@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int nChar, countConsonant = 0;
+
+    printf("Enter the number of charecters: ");
+    scanf("%d", &nChar);
+    char str[nChar + 1];
+
+    printf("Enter the string: ");
+    scanf("%s", &str);
+
+    for(int i = 0; i<=nChar; i++)
+    {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))  
+        {
+            if (!(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || 
+                  str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'))
+            {
+                countConsonant++;  
+            }
+        }
+    }
+    
+
+    printf("The number of consonant: %d", countConsonant);
+    
+    return 0;
+}
