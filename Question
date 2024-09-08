@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int nChar;
+
+    printf("Enter the number of charecters: ");
+    scanf("%d", &nChar);
+    char str[nChar + 1], revstr[nChar+1];
+
+    printf("Enter the string: ");
+    scanf("%s", &str);
+
+    for(int i = 0; i<=nChar+1; i++)
+    {
+        revstr[i] = str[nChar - 1 - i];
+    }
+
+    printf("Reverse string= %s", revstr);
+    
+    return 0;
+}
