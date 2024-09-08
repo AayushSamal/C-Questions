@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int arr1[] = {10, 20, 30, 40}; 
+    int arr2[] = {50, 60, 70, 80}; 
+    
+    int n1 = sizeof(arr1) / sizeof(arr1[0]);  
+    int n2 = sizeof(arr2) / sizeof(arr2[0]);  
+    int n3 = n1 + n2;  
+    
+    int arr3[n3];  
+    for (int i = 0; i < n1; i++) 
+    {
+        arr3[i] = arr1[i];
+    }
+
+    for (int i = 0; i < n2; i++) 
+    {
+        arr3[n1 + i] = arr2[i];
+    }
+
+    
+    printf("Merged array: ");
+    for (int i = 0; i < n3; i++) 
+    {
+        printf("%d ", arr3[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
